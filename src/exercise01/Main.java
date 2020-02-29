@@ -1,3 +1,4 @@
+package exercise01;
 //EXERCÍCIOS
 //
 // 1. Escrever um programa que faça o seguinte: Declarar uma variável “umNumeroA” do tipo Integer:
@@ -33,7 +34,7 @@ public class Main {
 
         System.out.println(sumArrayPairNumbers_Exercise05());
 
-        System.out.println(ArrayPairNumbers_Exercise06());
+        System.out.println(arrayPairNumbers_Exercise06());
     }
 
     private static void exercise1(int numeroA, double numeroB, String umaCadeiaDeTexto) {
@@ -97,7 +98,7 @@ public class Main {
         return sum5;
     }
 
-    private static ArrayList<Integer> ArrayPairNumbers_Exercise06() {
+    private static ArrayList<Integer> arrayPairNumbers_Exercise06() {
         List<Integer> arrayTestExercise6 = new ArrayList<>();
         arrayTestExercise6.add(1);
         arrayTestExercise6.add(2);
