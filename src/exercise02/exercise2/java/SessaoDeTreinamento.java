@@ -15,8 +15,8 @@ public class SessaoDeTreinamento {
     }
 
     private void atualizaExperiencia(JogadorDeFutebol jogador) {
-        jogador.setExperiencia(getExperience() + 1);
         setExperience(getExperience() + 1);
+        jogador.setExperiencia(getExperience());
     }
 
     public int getExperience() {
