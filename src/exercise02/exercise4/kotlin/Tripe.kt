@@ -1,6 +1,6 @@
 package exercise02.exercise4.kotlin
 
-class Tripe(
+data class Tripe(
     var isDobrado: Boolean,
     var alturaMaxima: Int,
     var alturaMinima: Int,
