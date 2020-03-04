@@ -21,12 +21,8 @@ public class Estadio {
     }
 
     public List<Boolean> saberDesempenho(Atleta atleta) {
-//        List<Prova> provasRealizadas = new ArrayList<>();
         List<Boolean> provasRealizadas = new ArrayList<>();
         for (int index = 0; index < getProvaList().size(); index++) {
-//            if (getProvaList().get(index).podeRealizar(atleta)) {
-//                provasRealizadas.add(getProvaList().get(index));
-//            }
             provasRealizadas.add(getProvaList().get(index).podeRealizar(atleta));
         }
         return provasRealizadas;
