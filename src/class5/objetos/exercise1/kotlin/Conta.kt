@@ -3,11 +3,11 @@ package class5.objetos.exercise1.kotlin
 data class Conta(
     var numeroDaConta: String,
     var saldo: Double = 0.0,
-    var titular: _root_ide_package_.class5.objetos.exercise1.kotlin.Cliente
+    var titular: Cliente
 ) {
 
     //Segundo Construtor (opcional)
-    constructor(numeroDaConta: String, titular: _root_ide_package_.class5.objetos.exercise1.kotlin.Cliente) : this(numeroDaConta, 0.0, titular)
+    constructor(numeroDaConta: String, titular: Cliente) : this(numeroDaConta, 0.0, titular)
 
     fun makeDeposit(value: Double): Double {
         saldo += value
