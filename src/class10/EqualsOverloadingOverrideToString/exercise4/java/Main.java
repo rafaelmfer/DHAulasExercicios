@@ -1,4 +1,4 @@
-package class10.EqualsOverloadingOverrideToString.exercise4.java;
+package class10.equalsoverloadingoverridetostring.exercise4.java;
 
 import java.util.ArrayList;
 import java.util.List;

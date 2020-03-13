@@ -1,4 +1,4 @@
-package class10.EqualsOverloadingOverrideToString.exercise2.java;
+package class10.equalsoverloadingoverridetostring.exercise2.java;
 
 import java.util.Objects;
 
