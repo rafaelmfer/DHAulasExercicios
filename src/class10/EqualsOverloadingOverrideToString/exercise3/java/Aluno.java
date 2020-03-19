@@ -32,9 +32,9 @@ public class Aluno {
 //    public boolean equals(Object o) {
 //        if (this == o) return true;
 //        if (o == null || getClass() != o.getClass()) return false;
-//        Coca coca = (Coca) o;
-//        return Objects.equals(tamanho, coca.tamanho) &&
-//                Objects.equals(preco, coca.preco);
+//        Aluno aluno = (Aluno) o;
+//        return Objects.equals(nome, aluno.nome) &&
+//                Objects.equals(numeroDoAluno, aluno.numeroDoAluno);
 //    }
 
     //Equals que compara apenas o Numero do Aluno do objeto
