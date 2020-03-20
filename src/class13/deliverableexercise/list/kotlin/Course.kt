@@ -19,14 +19,6 @@ class Course(var name: String, var courseCode: Int, var maxQuantityStudents: Int
         println("Aluno Removido do Curso $name")
     }
 
-    fun getStudentList(): List<Student> {
-        return studentList
-    }
-
-    fun setStudentList(studentList: MutableList<Student>) {
-        this.studentList = studentList
-    }
-
     //Equals padrão que compara o objeto inteiro
 //    override fun equals(other: Any?): Boolean {
 //        if (this === other) return true

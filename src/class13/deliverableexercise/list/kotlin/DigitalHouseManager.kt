@@ -89,7 +89,7 @@ class DigitalHouseManager {
     private fun getTeacherInList(teacherCode: Int, teacherList: List<Teacher>): Teacher {
         lateinit var teacher: Teacher
         for (t in teacherList) {
-            if (t.teacherCode.equals(teacherCode)) {
+            if (t.teacherCode == teacherCode) {
                 teacher = t
                 break
             }
