@@ -1,4 +1,4 @@
-package class13.deliverableexercise.java;
+package class13.deliverableexercise.hash.java;
 
 public class AssistantTeacher extends Teacher {
     private Integer quantityMonitoringHours;

@@ -1,7 +1,6 @@
-package class13.deliverableexercise.java;
+package class13.deliverableexercise.hash.java;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Course {
@@ -10,7 +9,7 @@ public class Course {
     private TitularTeacher titularTeacher;
     private AssistantTeacher assistantTeacher;
     private Integer maxQuantityStudents;
-    private List<Student> studentList = new ArrayList<>();
+    private HashMap<Integer, Student> studentList = new HashMap<>();
 
     public Course(String name, Integer courseCode, Integer maxQuantityStudents) {
         this.name = name;
@@ -19,8 +18,8 @@ public class Course {
     }
 
     public Boolean addStudent(Student student) {
-        if (!(studentList.size() >= maxQuantityStudents)) {
-            studentList.add(student);
+        if (studentList.size() < maxQuantityStudents) {
+            studentList.put(student.getStudentCode(), student);
             return true;
         } else {
             return false;
@@ -28,7 +27,7 @@ public class Course {
     }
 
     public void removeStudent(Student student) {
-        studentList.remove(student);
+        studentList.remove(student.getStudentCode());
         System.out.println("Aluno Removido do Curso " + name);
     }
 
@@ -72,11 +71,11 @@ public class Course {
         this.maxQuantityStudents = maxQuantityStudents;
     }
 
-    public List<Student> getStudentList() {
+    public HashMap<Integer, Student> getStudentList() {
         return studentList;
     }
 
-    public void setStudentList(List<Student> studentList) {
+    public void setStudentList(HashMap<Integer, Student> studentList) {
         this.studentList = studentList;
     }
 
