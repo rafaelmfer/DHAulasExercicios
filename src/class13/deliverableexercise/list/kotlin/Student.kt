@@ -1,4 +1,4 @@
-package class13.deliverableexercise.kotlin
+package class13.deliverableexercise.list.kotlin
 
 data class Student(
     var name: String,

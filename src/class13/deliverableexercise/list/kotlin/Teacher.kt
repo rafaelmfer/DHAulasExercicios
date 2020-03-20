@@ -1,4 +1,4 @@
-package class13.deliverableexercise.kotlin
+package class13.deliverableexercise.list.kotlin
 
 abstract class Teacher(var name: String, var lastName: String, var houseTime: Int, var teacherCode: Int) {
 

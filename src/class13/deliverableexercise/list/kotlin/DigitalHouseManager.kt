@@ -1,4 +1,4 @@
-package class13.deliverableexercise.kotlin
+package class13.deliverableexercise.list.kotlin
 
 class DigitalHouseManager {
     private var studentList = mutableListOf<Student>()

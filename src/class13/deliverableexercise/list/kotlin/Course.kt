@@ -1,4 +1,4 @@
-package class13.deliverableexercise.kotlin
+package class13.deliverableexercise.list.kotlin
 
 class Course(var name: String, var courseCode: Int, var maxQuantityStudents: Int) {
     lateinit var titularTeacher: TitularTeacher
