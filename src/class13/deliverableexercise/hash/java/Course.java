@@ -9,7 +9,7 @@ public class Course {
     private TitularTeacher titularTeacher;
     private AssistantTeacher assistantTeacher;
     private Integer maxQuantityStudents;
-    private HashMap<Integer, Student> studentList = new HashMap<>();
+    private HashMap<Integer, Student> studentHashMap = new HashMap<>();
 
     public Course(String name, Integer courseCode, Integer maxQuantityStudents) {
         this.name = name;
@@ -18,8 +18,8 @@ public class Course {
     }
 
     public Boolean addStudent(Student student) {
-        if (studentList.size() < maxQuantityStudents) {
-            studentList.put(student.getStudentCode(), student);
+        if (studentHashMap.size() < maxQuantityStudents) {
+            studentHashMap.put(student.getStudentCode(), student);
             return true;
         } else {
             return false;
@@ -27,7 +27,7 @@ public class Course {
     }
 
     public void removeStudent(Student student) {
-        studentList.remove(student.getStudentCode());
+        studentHashMap.remove(student.getStudentCode());
         System.out.println("Aluno Removido do Curso " + name);
     }
 
@@ -71,12 +71,12 @@ public class Course {
         this.maxQuantityStudents = maxQuantityStudents;
     }
 
-    public HashMap<Integer, Student> getStudentList() {
-        return studentList;
+    public HashMap<Integer, Student> getStudentHashMap() {
+        return studentHashMap;
     }
 
-    public void setStudentList(HashMap<Integer, Student> studentList) {
-        this.studentList = studentList;
+    public void setStudentHashMap(HashMap<Integer, Student> studentHashMap) {
+        this.studentHashMap = studentHashMap;
     }
 
     //Equals padrão que compara o objeto inteiro
