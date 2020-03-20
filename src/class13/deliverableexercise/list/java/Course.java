@@ -19,7 +19,7 @@ public class Course {
     }
 
     public Boolean addStudent(Student student) {
-        if (!(studentList.size() >= maxQuantityStudents)) {
+        if (studentList.size() < maxQuantityStudents) {
             studentList.add(student);
             return true;
         } else {
