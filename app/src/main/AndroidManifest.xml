@@ -21,6 +21,9 @@
         <activity android:name="androidstudio.class18.java.SellingProductWithDiscountActivity"
             android:label="@string/product">
         </activity>
+        <activity android:name="androidstudio.class18.kotlin.SellingProductWithDiscountAct"
+            android:label="@string/product">
+        </activity>
 
     </application>
 
