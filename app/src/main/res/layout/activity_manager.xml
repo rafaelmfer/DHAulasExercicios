@@ -1,8 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClass14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvClass14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:text="AULA 14 - Introdução a Android e XML"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btJavaClass14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/java"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btKotlinClass14"
+            app:layout_constraintStart_toStartOf="@+id/tvClass14"
+            app:layout_constraintTop_toBottomOf="@+id/tvClass14" />
+
+        <Button
+            android:id="@+id/btKotlinClass14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin"
+            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass14"
+            app:layout_constraintEnd_toEndOf="@+id/tvClass14"
+            app:layout_constraintStart_toEndOf="@+id/btJavaClass14"
+            app:layout_constraintTop_toTopOf="@+id/btJavaClass14" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClass16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clClass14">
+
+        <TextView
+            android:id="@+id/tvClass16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:text="AULA 16 - Activity, Ciclo de Vida de Activity e LinearLayout"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btJavaClass16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/java"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btKotlinClass16"
+            app:layout_constraintStart_toStartOf="@+id/tvClass16"
+            app:layout_constraintTop_toBottomOf="@+id/tvClass16" />
+
+        <Button
+            android:id="@+id/btKotlinClass16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin"
+            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass16"
+            app:layout_constraintEnd_toEndOf="@+id/tvClass16"
+            app:layout_constraintStart_toEndOf="@+id/btJavaClass16"
+            app:layout_constraintTop_toTopOf="@+id/btJavaClass16" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClass18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clClass16">
+
+        <TextView
+            android:id="@+id/tvClass18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:text="AULA 18 - Layouts"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btJavaClass18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/java"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btKotlinClass18"
+            app:layout_constraintStart_toStartOf="@+id/tvClass18"
+            app:layout_constraintTop_toBottomOf="@+id/tvClass18" />
+
+        <Button
+            android:id="@+id/btKotlinClass18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin"
+            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass18"
+            app:layout_constraintEnd_toEndOf="@+id/tvClass18"
+            app:layout_constraintStart_toEndOf="@+id/btJavaClass18"
+            app:layout_constraintTop_toTopOf="@+id/btJavaClass18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
