@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="androidstudio.class18.kotlin.SellingProductWithDiscountAct">
+    tools:context="androidstudio.class18.kotlin.ProductWithDiscountAct">
 
     <ImageView
         android:id="@+id/ivBannerSellingProduct"
@@ -16,40 +16,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etProductNameSellingProduct"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilProductName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_16"
         android:hint="@string/product_name"
-        android:textSize="@dimen/font_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBannerSellingProduct" />
+        app:layout_constraintTop_toBottomOf="@id/ivBannerSellingProduct">
 
-    <EditText
-        android:id="@+id/etPriceProductSellingProduct"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPriceProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_16"
         android:hint="@string/price_product"
-        android:inputType="numberDecimal"
-        android:textSize="@dimen/font_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etProductNameSellingProduct" />
+        app:layout_constraintTop_toBottomOf="@id/tilProductName">
 
-    <EditText
-        android:id="@+id/etDiscountSellingProduct"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPriceProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/font_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDiscountOfProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_16"
         android:hint="@string/discount_percentage"
-        android:inputType="numberDecimal"
-        android:textSize="@dimen/font_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPriceProductSellingProduct" />
+        app:layout_constraintTop_toBottomOf="@id/tilPriceProduct">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDiscountOfProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/font_24" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btCalculateDiscountSellingProduct"
@@ -62,6 +80,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDiscountSellingProduct" />
+        app:layout_constraintTop_toBottomOf="@+id/tilDiscountOfProduct" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

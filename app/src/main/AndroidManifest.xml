@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="androidstudio.class18.java.SellingProductWithDiscountActivity"
+        <activity android:name="androidstudio.class18.java.ProductWithDiscountActivity"
             android:label="@string/product">
         </activity>
-        <activity android:name="androidstudio.class18.kotlin.SellingProductWithDiscountAct"
+        <activity android:name="androidstudio.class18.kotlin.ProductWithDiscountAct"
             android:label="@string/product">
         </activity>
 
