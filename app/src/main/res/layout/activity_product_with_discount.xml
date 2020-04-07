@@ -7,7 +7,7 @@
     tools:context="androidstudio.class18.kotlin.ProductWithDiscountAct">
 
     <ImageView
-        android:id="@+id/ivBannerSellingProduct"
+        android:id="@+id/ivBannerProductDiscount"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:background="@drawable/image_class18"
@@ -24,7 +24,7 @@
         android:hint="@string/product_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBannerSellingProduct">
+        app:layout_constraintTop_toBottomOf="@id/ivBannerProductDiscount">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etProductName"
@@ -70,7 +70,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btCalculateDiscountSellingProduct"
+        android:id="@+id/btCalculateDiscountProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_16"

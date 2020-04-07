@@ -13,7 +13,7 @@ class ProductWithDiscountAct : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_with_discount)
 
-        btCalculateDiscountSellingProduct.setOnClickListener {
+        btCalculateDiscountProduct.setOnClickListener {
             if (editTextIsNotEmpty(etProductName, etPriceProduct)) {
                 Toast.makeText(this, totalAmountPayable().toString(), Toast.LENGTH_LONG).show()
             } else {

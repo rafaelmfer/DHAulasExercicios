@@ -24,7 +24,7 @@ public class ProductWithDiscountActivity extends AppCompatActivity {
         etProductName = findViewById(R.id.etProductName);
         etPriceProduct = findViewById(R.id.etPriceProduct);
         etDiscount = findViewById(R.id.etDiscountOfProduct);
-        btCalculate = findViewById(R.id.btCalculateDiscountSellingProduct);
+        btCalculate = findViewById(R.id.btCalculateDiscountProduct);
 
         btCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
