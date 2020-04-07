@@ -24,9 +24,9 @@ class ProductWithDiscountAct : AppCompatActivity() {
 
     private fun editTextIsNotEmpty(vararg editText: EditText): Boolean {
         editText.forEach { et ->
-            if (et.text.isNotEmpty()) return true
+            if (et.text.isEmpty()) return false
         }
-        return false
+        return true
     }
 
     private fun totalAmountPayable(): Double {
