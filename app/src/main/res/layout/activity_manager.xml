@@ -133,5 +133,47 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClass20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clClass18">
+
+        <TextView
+            android:id="@+id/tvClass20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:text="AULA 20 - Componentes do Material Design"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btJavaClass20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/java"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btKotlinClass20"
+            app:layout_constraintStart_toStartOf="@+id/tvClass20"
+            app:layout_constraintTop_toBottomOf="@+id/tvClass20" />
+
+        <Button
+            android:id="@+id/btKotlinClass20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin"
+            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass20"
+            app:layout_constraintEnd_toEndOf="@+id/tvClass20"
+            app:layout_constraintStart_toEndOf="@+id/btJavaClass20"
+            app:layout_constraintTop_toTopOf="@+id/btJavaClass20" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
