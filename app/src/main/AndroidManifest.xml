@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name="androidstudio.ActivityManager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,18 +19,26 @@
         </activity>
 
         <activity
-            android:name="androidstudio.class18.java.ProductWithDiscountActivity"
-            android:label="@string/product" />
+        android:name="androidstudio.class18.java.ProductWithDiscountActivity"
+        android:label="@string/product" />
 
         <activity
-            android:name="androidstudio.class18.kotlin.ProductWithDiscountAct"
-            android:label="@string/product" />
+        android:name="androidstudio.class18.kotlin.ProductWithDiscountAct"
+        android:label="@string/product" />
 
-        <activity android:name="androidstudio.class20.java.RegisterActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+        android:name="androidstudio.class20.java.RegisterActivity"
+        android:theme="@style/AppThemeNoActionBar" />
 
-        <activity android:name="androidstudio.class20.kotlin.RegisterAct"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+        android:name="androidstudio.class20.kotlin.RegisterAct"
+        android:theme="@style/AppThemeNoActionBar" />
+
+        <activity android:name="androidstudio.class21.java.TelephoneBookActivity" />
+        <activity android:name="androidstudio.class21.java.TelephoneContactActivity" />
+
+        <activity android:name="androidstudio.class21.kotlin.TelephoneBookAct" />
+        <activity android:name="androidstudio.class21.kotlin.TelephoneContactAct" />
+
     </application>
-
 </manifest>

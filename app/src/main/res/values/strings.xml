@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">Code Classes</string>
 
-<!--    COMMON-->
+    <!--    COMMON-->
     <string name="java">Java</string>
     <string name="kotlin">Kotlin</string>
 
-<!--    CLASS 18-->
+    <string name="back">Voltar</string>
+
+    <string name="name">Nome</string>
+
+    <string name="error_field_must_be_filled">Campo deve ser preenchido</string>
+
+    <!--    CLASS 18-->
     <string name="product_name">Nome do Produto</string>
     <string name="price_product">Preço do Produto</string>
     <string name="discount_percentage">Porcetagem de Desconto</string>
@@ -13,9 +19,11 @@
     <string name="product">Produto</string>
     <string name="fill_name_and_price_of_the_product">"Por favor, prencher o nome e preço do produto"</string>
 
-<!--    CLASS 21-->
-    <string name="name">Nome</string>
+    <!--    CLASS 20-->
     <string name="email">Email</string>
     <string name="user_successfully_registered">Usuário cadastrado com sucesso</string>
-    <string name="error_field_must_be_filled">Campo deve ser preenchido</string>
+
+    <!--    CLASS 21-->
+    <string name="telephone">Telefone</string>
+
 </resources>

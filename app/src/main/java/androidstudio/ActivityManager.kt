@@ -6,6 +6,8 @@ import androidstudio.class18.java.ProductWithDiscountActivity
 import androidstudio.class18.kotlin.ProductWithDiscountAct
 import androidstudio.class20.java.RegisterActivity
 import androidstudio.class20.kotlin.RegisterAct
+import androidstudio.class21.java.TelephoneBookActivity
+import androidstudio.class21.kotlin.TelephoneBookAct
 import androidx.appcompat.app.AppCompatActivity
 import com.rafaelmfer.codeclasses.R
 import kotlinx.android.synthetic.main.activity_manager.*
@@ -27,6 +29,13 @@ class ActivityManager : AppCompatActivity() {
         }
         btKotlinClass20.setOnClickListener {
             startActivity(Intent(this@ActivityManager, RegisterAct::class.java))
+        }
+
+        btJavaClass21.setOnClickListener {
+            startActivity(Intent(this@ActivityManager, TelephoneBookActivity::class.java))
+        }
+        btKotlinClass21.setOnClickListener {
+            startActivity(Intent(this@ActivityManager, TelephoneBookAct::class.java))
         }
     }
 }

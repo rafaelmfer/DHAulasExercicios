@@ -42,4 +42,6 @@
 
     <!--    ELEVATION-->
     <dimen name="elevate_4">4dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="width_200">200dp</dimen>
 </resources>
