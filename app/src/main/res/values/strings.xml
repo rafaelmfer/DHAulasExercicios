@@ -8,7 +8,6 @@
     <string name="back">Voltar</string>
 
     <string name="name">Nome</string>
-
     <string name="error_field_must_be_filled">Campo deve ser preenchido</string>
 
     <!--    CLASS 18-->
@@ -25,5 +24,9 @@
 
     <!--    CLASS 21-->
     <string name="telephone">Telefone</string>
+
+    <!--    CLASS 23-->
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
 
 </resources>

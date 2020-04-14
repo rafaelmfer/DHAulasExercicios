@@ -1,222 +1,271 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clClass14"
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tvClass14"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:text="AULA 14 - Introdução a Android e XML"
-            android:textSize="@dimen/font_16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btJavaClass14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_16"
-            android:text="@string/java"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btKotlinClass14"
-            app:layout_constraintStart_toStartOf="@+id/tvClass14"
-            app:layout_constraintTop_toBottomOf="@+id/tvClass14" />
+            <TextView
+                android:id="@+id/tvClass14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 14 - Introdução a Android e XML"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btKotlinClass14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kotlin"
-            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass14"
-            app:layout_constraintEnd_toEndOf="@+id/tvClass14"
-            app:layout_constraintStart_toEndOf="@+id/btJavaClass14"
-            app:layout_constraintTop_toTopOf="@+id/btJavaClass14" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btJavaClass14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass14"
+                app:layout_constraintStart_toStartOf="@+id/tvClass14"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass14" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clClass16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clClass14">
+            <Button
+                android:id="@+id/btKotlinClass14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass14"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass14"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass14"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass14" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tvClass16"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:text="AULA 16 - Activity, Ciclo de Vida de Activity e LinearLayout"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/clClass14">
 
-        <Button
-            android:id="@+id/btJavaClass16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_16"
-            android:text="@string/java"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btKotlinClass16"
-            app:layout_constraintStart_toStartOf="@+id/tvClass16"
-            app:layout_constraintTop_toBottomOf="@+id/tvClass16" />
+            <TextView
+                android:id="@+id/tvClass16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 16 - Activity, Ciclo de Vida de Activity e LinearLayout"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btKotlinClass16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kotlin"
-            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass16"
-            app:layout_constraintEnd_toEndOf="@+id/tvClass16"
-            app:layout_constraintStart_toEndOf="@+id/btJavaClass16"
-            app:layout_constraintTop_toTopOf="@+id/btJavaClass16" />
+            <Button
+                android:id="@+id/btJavaClass16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass16"
+                app:layout_constraintStart_toStartOf="@+id/tvClass16"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass16" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btKotlinClass16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass16"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass16"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass16"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass16" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clClass18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clClass16">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tvClass18"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:text="AULA 18 - Layouts"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/clClass16">
 
-        <Button
-            android:id="@+id/btJavaClass18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_16"
-            android:text="@string/java"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btKotlinClass18"
-            app:layout_constraintStart_toStartOf="@+id/tvClass18"
-            app:layout_constraintTop_toBottomOf="@+id/tvClass18" />
+            <TextView
+                android:id="@+id/tvClass18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 18 - Layouts"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btKotlinClass18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kotlin"
-            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass18"
-            app:layout_constraintEnd_toEndOf="@+id/tvClass18"
-            app:layout_constraintStart_toEndOf="@+id/btJavaClass18"
-            app:layout_constraintTop_toTopOf="@+id/btJavaClass18" />
+            <Button
+                android:id="@+id/btJavaClass18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass18"
+                app:layout_constraintStart_toStartOf="@+id/tvClass18"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass18" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btKotlinClass18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass18"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass18"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass18"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass18" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clClass20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clClass18">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tvClass20"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:text="AULA 20 - Componentes do Material Design"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/clClass18">
 
-        <Button
-            android:id="@+id/btJavaClass20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_16"
-            android:text="@string/java"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btKotlinClass20"
-            app:layout_constraintStart_toStartOf="@+id/tvClass20"
-            app:layout_constraintTop_toBottomOf="@+id/tvClass20" />
+            <TextView
+                android:id="@+id/tvClass20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 20 - Componentes do Material Design"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btKotlinClass20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kotlin"
-            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass20"
-            app:layout_constraintEnd_toEndOf="@+id/tvClass20"
-            app:layout_constraintStart_toEndOf="@+id/btJavaClass20"
-            app:layout_constraintTop_toTopOf="@+id/btJavaClass20" />
+            <Button
+                android:id="@+id/btJavaClass20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass20"
+                app:layout_constraintStart_toStartOf="@+id/tvClass20"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass20" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btKotlinClass20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass20"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass20"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass20"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass20" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clClass21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clClass20">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tvClass21"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:text="AULA 21 - Comunicação Entre Activitys"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/clClass20">
 
-        <Button
-            android:id="@+id/btJavaClass21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_16"
-            android:text="@string/java"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btKotlinClass21"
-            app:layout_constraintStart_toStartOf="@+id/tvClass21"
-            app:layout_constraintTop_toBottomOf="@+id/tvClass21" />
+            <TextView
+                android:id="@+id/tvClass21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 21 - Comunicação Entre Activitys"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btKotlinClass21"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btJavaClass21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass21"
+                app:layout_constraintStart_toStartOf="@+id/tvClass21"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass21" />
+
+            <Button
+                android:id="@+id/btKotlinClass21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass21"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass21"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass21"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass21" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClass23"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/kotlin"
-            app:layout_constraintBottom_toBottomOf="@+id/btJavaClass21"
-            app:layout_constraintEnd_toEndOf="@+id/tvClass21"
-            app:layout_constraintStart_toEndOf="@+id/btJavaClass21"
-            app:layout_constraintTop_toTopOf="@+id/btJavaClass21" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clClass21">
+
+            <TextView
+                android:id="@+id/tvClass23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="AULA 23 - Fragments"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btJavaClass23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/java"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btKotlinClass23"
+                app:layout_constraintStart_toStartOf="@+id/tvClass23"
+                app:layout_constraintTop_toBottomOf="@+id/tvClass23" />
+
+            <Button
+                android:id="@+id/btKotlinClass23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin"
+                app:layout_constraintBottom_toBottomOf="@+id/btJavaClass23"
+                app:layout_constraintEnd_toEndOf="@+id/tvClass23"
+                app:layout_constraintStart_toEndOf="@+id/btJavaClass23"
+                app:layout_constraintTop_toTopOf="@+id/btJavaClass23" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
