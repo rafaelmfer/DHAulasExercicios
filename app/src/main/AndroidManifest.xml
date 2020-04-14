@@ -40,6 +40,7 @@
         <activity android:name="androidstudio.class21.kotlin.TelephoneContactAct" />
 
         <activity android:name="androidstudio.class23.java.Class23Activity" />
+        <activity android:name="androidstudio.class23.kotlin.Class23Act" />
     </application>
 
 </manifest>

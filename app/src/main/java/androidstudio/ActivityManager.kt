@@ -9,6 +9,7 @@ import androidstudio.class20.kotlin.RegisterAct
 import androidstudio.class21.java.TelephoneBookActivity
 import androidstudio.class21.kotlin.TelephoneBookAct
 import androidstudio.class23.java.Class23Activity
+import androidstudio.class23.kotlin.Class23Act
 import androidx.appcompat.app.AppCompatActivity
 import com.rafaelmfer.codeclasses.R
 import kotlinx.android.synthetic.main.activity_manager.*
@@ -39,6 +40,9 @@ class ActivityManager : AppCompatActivity() {
         }
         btJavaClass23.setOnClickListener {
             startActivity(Intent(this@ActivityManager, Class23Activity::class.java))
+        }
+        btKotlinClass23.setOnClickListener {
+            startActivity(Intent(this@ActivityManager, Class23Act::class.java))
         }
     }
 }
