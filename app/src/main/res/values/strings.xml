@@ -6,9 +6,11 @@
     <string name="kotlin">Kotlin</string>
 
     <string name="back">Voltar</string>
-
     <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="error_field_must_be_filled">Campo deve ser preenchido</string>
+    <string name="sign_in">Entrar</string>
 
     <!--    CLASS 18-->
     <string name="product_name">Nome do Produto</string>
@@ -19,7 +21,6 @@
     <string name="fill_name_and_price_of_the_product">"Por favor, prencher o nome e preço do produto"</string>
 
     <!--    CLASS 20-->
-    <string name="email">Email</string>
     <string name="user_successfully_registered">Usuário cadastrado com sucesso</string>
 
     <!--    CLASS 21-->
@@ -28,5 +29,15 @@
     <!--    CLASS 23-->
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
+
+    <!--    CLASS 24-->
+    <string name="welcome_name">Seja bem vindo %1$s!</string>
+    <string name="follow_to_the_next_page_and_meet_the_cars">Siga para proxima página e conheça os carros</string>
+    <string name="lets_go">Vamos</string>
+    <string name="car_one">Carro 1</string>
+    <string name="car_two">Carro 2</string>
+
+    <!--    CLASS 27-->
+    <string name="students">Alunos</string>
 
 </resources>

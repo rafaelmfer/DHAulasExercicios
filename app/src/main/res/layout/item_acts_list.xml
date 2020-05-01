@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tvTitleClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="AULA 14 - Introdução a Android e XML" />
+
+    <Button
+        android:id="@+id/btJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/java"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btKotlin"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleClassName"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleClassName" />
+
+    <Button
+        android:id="@+id/btKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kotlin"
+        app:layout_constraintBottom_toBottomOf="@+id/btJava"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitleClassName"
+        app:layout_constraintStart_toEndOf="@+id/btJava"
+        app:layout_constraintTop_toTopOf="@+id/btJava" />
+</androidx.constraintlayout.widget.ConstraintLayout>
