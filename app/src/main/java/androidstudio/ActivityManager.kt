@@ -15,6 +15,8 @@ import androidstudio.class21.java.TelephoneBookActivity
 import androidstudio.class21.kotlin.TelephoneBookAct
 import androidstudio.class23.java.Class23Activity
 import androidstudio.class23.kotlin.Class23Act
+import androidstudio.class27.java.ui.ActivityClass27StudentsList
+import androidstudio.class27.kotlin.ui.ActClass27StudentsList
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -50,10 +52,14 @@ class ActivityManager : AppCompatActivity() {
             title = "AULA 23 - Fragments",
             javaActivity = Class23Activity::class,
             kotlinActivity = Class23Act::class
-        )
+        ),
 //        ClassExercises(title = "AULA 24 - Comunicação Entre Fragments",)
 //        ClassExercises(title = "AULA 26 - NavigationView e DrawerLayout",)
-//        ClassExercises(title = "AULA 27 - RecyclerView",)
+        ClassExercises(
+            title = "AULA 27 - RecyclerView",
+            javaActivity = ActivityClass27StudentsList::class,
+            kotlinActivity = ActClass27StudentsList::class
+        )
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

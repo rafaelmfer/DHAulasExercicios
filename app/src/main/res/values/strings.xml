@@ -39,5 +39,6 @@
 
     <!--    CLASS 27-->
     <string name="students">Alunos</string>
+    <string name="ra_number">RA: %1$s</string>
 
 </resources>
