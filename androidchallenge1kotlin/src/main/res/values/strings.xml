@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android Challenge 1 Kotlin</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="profile">Profile</string>
+    <string name="back">Voltat</string>
+    <string name="error_field_must_be_filled">Campo deve ser preenchido</string>
+
+    <string name="name">Name</string>
+    <string name="plate_description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</string>
+    <string name="close_at_hhmm">Fecha às %1$s</string>
+    <string name="principal_plates">Pratos Principais</string>
+</resources>

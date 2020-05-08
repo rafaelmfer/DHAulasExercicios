@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CodeClasses.iml" filepath="$PROJECT_DIR$/CodeClasses.iml" group="CodeClasses" />
       <module fileurl="file://$PROJECT_DIR$/androidchallenge1/androidchallenge1.iml" filepath="$PROJECT_DIR$/androidchallenge1/androidchallenge1.iml" group="CodeClasses/androidchallenge1" />
+      <module fileurl="file://$PROJECT_DIR$/androidchallenge1kotlin/androidchallenge1kotlin.iml" filepath="$PROJECT_DIR$/androidchallenge1kotlin/androidchallenge1kotlin.iml" group="CodeClasses/androidchallenge1kotlin" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="CodeClasses/app" />
     </modules>
   </component>

@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/androidchallenge1" />
+            <option value="$PROJECT_DIR$/androidchallenge1kotlin" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
