@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="utils.ActBase" />
-
+        <activity android:name="utils.debugging.ActException" />
 
         <activity android:name="androidstudio.ActivityManager">
             <intent-filter>
