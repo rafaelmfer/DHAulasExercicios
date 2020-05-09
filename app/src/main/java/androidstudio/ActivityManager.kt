@@ -16,6 +16,7 @@ import androidstudio.class21.kotlin.TelephoneBookAct
 import androidstudio.class23.java.Class23Activity
 import androidstudio.class23.kotlin.Class23Act
 import androidstudio.class24.java.Class24Activity
+import androidstudio.class24.kotlin.Class24Act
 import androidstudio.class27.java.ui.ActivityClass27StudentsList
 import androidstudio.class27.kotlin.ui.ActClass27StudentsList
 import androidx.appcompat.app.AppCompatActivity
@@ -57,7 +58,7 @@ class ActivityManager : AppCompatActivity() {
         ClassExercises(
             title = "AULA 24 - Comunicação Entre Fragments",
             javaActivity = Class24Activity::class,
-            kotlinActivity = Class24Activity::class
+            kotlinActivity = Class24Act::class
         ),
 //        ClassExercises(title = "AULA 26 - NavigationView e DrawerLayout",)
         ClassExercises(
