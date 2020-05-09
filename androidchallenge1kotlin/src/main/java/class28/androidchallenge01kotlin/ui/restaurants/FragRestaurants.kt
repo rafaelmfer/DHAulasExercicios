@@ -16,8 +16,8 @@ import kotlinx.android.synthetic.main.fragment_restaurant.*
 
 class FragRestaurants : Fragment(), OnRestaurantItemClickCallback {
 
-    private lateinit var restaurantsBackButton: ImageButton
-    private lateinit var restaurantOptionsMenu: ImageButton
+    private var restaurantsBackButton: ImageButton? = null
+    private var restaurantOptionsMenu: ImageButton? = null
     private var activity: ActivityContract? = null
 
     private var plateList = listOf<Plate>()
@@ -37,10 +37,10 @@ class FragRestaurants : Fragment(), OnRestaurantItemClickCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        restaurantsBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)!!
-        restaurantOptionsMenu = getActivity()?.findViewById(R.id.restaurant_options_menu)!!
-        restaurantsBackButton.visibility = View.GONE
-        restaurantOptionsMenu.visibility = View.VISIBLE
+        restaurantsBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)
+        restaurantOptionsMenu = getActivity()?.findViewById(R.id.restaurant_options_menu)
+        restaurantsBackButton?.visibility = View.GONE
+        restaurantOptionsMenu?.visibility = View.VISIBLE
 
         //Cada parametro da instância criado de uma maneira diferente, string direta, getString e setado diretamente na classe modelo.
         plateList = listOf(

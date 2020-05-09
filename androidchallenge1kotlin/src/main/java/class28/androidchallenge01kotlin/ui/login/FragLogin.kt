@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_login.*
 
 class FragLogin : Fragment() {
 
-    private lateinit var registerBackButton: ImageButton
+    private var registerBackButton: ImageButton? = null
     private lateinit var activity: ActivityContract
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -31,8 +31,8 @@ class FragLogin : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        registerBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)!!
-        registerBackButton.visibility = View.GONE
+        registerBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)
+        registerBackButton?.visibility = View.GONE
         btLogin.setOnClickListener {
             removeErrorOnTextInputLayout(tilLoginUserEmail, tilLoginUserPassword)
             if (editTextIsNotEmpty(etLoginUserEmail, etLoginUserPassword)) {

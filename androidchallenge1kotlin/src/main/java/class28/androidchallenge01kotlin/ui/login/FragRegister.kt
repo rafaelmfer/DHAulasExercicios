@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_register.*
 
 class FragRegister : Fragment() {
 
-    private lateinit var registerBackButton: ImageButton
+    private var registerBackButton: ImageButton? = null
     private var activity: ActivityContract? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -31,8 +31,8 @@ class FragRegister : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        registerBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)!!
-        registerBackButton.apply {
+        registerBackButton = getActivity()?.findViewById(R.id.toolbar_back_button)
+        registerBackButton?.apply {
             visibility = View.VISIBLE
             setOnClickListener { getActivity()?.onBackPressed() }
         }
