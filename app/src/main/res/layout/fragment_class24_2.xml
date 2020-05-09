@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_500"
+    tools:context="androidstudio.class24.java.FragmentClass24Output2">
+
+    <TextView
+        android:id="@+id/tvWelcomeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_36"
+        app:layout_constraintBottom_toTopOf="@+id/tvFollowToNextPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/welcome_name" />
+
+    <TextView
+        android:id="@+id/tvFollowToNextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center"
+        android:text="@string/follow_to_the_next_page_and_meet_the_cars"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_36"
+        app:layout_constraintBottom_toTopOf="@+id/btFrag2LetsGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeName" />
+
+    <Button
+        android:id="@+id/btFrag2LetsGo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_72"
+        android:background="@color/red_800"
+        android:text="@string/lets_go"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFollowToNextPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
