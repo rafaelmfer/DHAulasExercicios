@@ -1,4 +1,4 @@
-package utils
+package utils.baseviews
 
 import android.os.Bundle
 import android.view.LayoutInflater

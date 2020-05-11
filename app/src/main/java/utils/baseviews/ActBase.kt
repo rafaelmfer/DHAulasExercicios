@@ -1,12 +1,10 @@
-package utils
+package utils.baseviews
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import utils.debugging.ExceptionHandler
-
-const val teste = "teste"
 
 open class ActBase(val layout: Any? = null) : AppCompatActivity() {
 

@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 
 import com.rafaelmfer.codeclasses.R;
 
-import utils.ActBase;
+import utils.baseviews.ActBase;
 
 import static utils.debugging.ExceptionHandler.EXCEPTION_DEVICE;
 import static utils.debugging.ExceptionHandler.EXCEPTION_LOG;

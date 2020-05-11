@@ -12,11 +12,7 @@ fun ViewPager.setupPagerAdapter(frags: Any, titles: Any) {
     )
 }
 
-class CustomPagerAdapter(
-    private val frags: Any,
-    private val titles: Any,
-    fragmentManager: FragmentManager
-) : FragmentPagerAdapter(fragmentManager) {
+class CustomPagerAdapter(private val frags: Any, private val titles: Any, fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
     override fun getItem(position: Int) =
         when (frags) {

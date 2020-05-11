@@ -10,9 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="utils.ActBase" />
+        <activity android:name="utils.baseviews.ActBase" />
         <activity android:name="utils.debugging.ActException" />
-
         <activity android:name="androidstudio.ActivityManager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,36 +19,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="androidstudio.class18.java.ProductWithDiscountActivity"
             android:label="@string/product" />
         <activity
             android:name="androidstudio.class18.kotlin.ProductWithDiscountAct"
             android:label="@string/product" />
-
         <activity
             android:name="androidstudio.class20.java.RegisterActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name="androidstudio.class20.kotlin.RegisterAct"
             android:theme="@style/AppThemeNoActionBar" />
-
         <activity android:name="androidstudio.class21.java.TelephoneBookActivity" />
         <activity android:name="androidstudio.class21.java.TelephoneContactActivity" />
         <activity android:name="androidstudio.class21.kotlin.TelephoneBookAct" />
         <activity android:name="androidstudio.class21.kotlin.TelephoneContactAct" />
-
         <activity android:name="androidstudio.class23.java.Class23Activity" />
         <activity android:name="androidstudio.class23.kotlin.Class23Act" />
-
         <activity android:name="androidstudio.class24.java.Class24Activity" />
         <activity android:name="androidstudio.class24.java.Class24Activity2" />
         <activity android:name="androidstudio.class24.kotlin.Class24Act" />
         <activity android:name="androidstudio.class24.kotlin.Class24Act2" />
-
         <activity android:name="androidstudio.class27.java.ui.ActivityClass27StudentsList" />
         <activity android:name="androidstudio.class27.kotlin.ui.ActClass27StudentsList" />
-
     </application>
+
 </manifest>

@@ -12,7 +12,7 @@ import android.os.Build.VERSION.SDK_INT
 import android.os.Process.killProcess
 import android.os.Process.myPid
 import com.rafaelmfer.codeclasses.BuildConfig.APPLICATION_ID
-import utils.ActBase.Companion.currentActivity
+import utils.baseviews.ActBase.Companion.currentActivity
 import java.io.PrintWriter
 import java.io.StringWriter
 
