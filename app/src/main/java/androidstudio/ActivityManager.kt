@@ -17,6 +17,7 @@ import androidstudio.class23.java.Class23Activity
 import androidstudio.class23.kotlin.Class23Act
 import androidstudio.class24.java.Class24Activity
 import androidstudio.class24.kotlin.Class24Act
+import androidstudio.class26.java.ActivityNavDrawerSimples
 import androidstudio.class27.java.ui.ActivityClass27StudentsList
 import androidstudio.class27.kotlin.ui.ActClass27StudentsList
 import androidx.appcompat.app.AppCompatActivity
@@ -31,7 +32,7 @@ class ActivityManager : AppCompatActivity() {
     data class ClassExercises(
         var title: String,
         var javaActivity: KClass<out AppCompatActivity>,
-        var kotlinActivity: KClass<out AppCompatActivity>
+        var kotlinActivity: KClass<out AppCompatActivity>? = null
     )
 
     var classExercises = listOf(
@@ -60,7 +61,10 @@ class ActivityManager : AppCompatActivity() {
             javaActivity = Class24Activity::class,
             kotlinActivity = Class24Act::class
         ),
-//        ClassExercises(title = "AULA 26 - NavigationView e DrawerLayout",)
+        ClassExercises(
+            title = "AULA 26 - NavigationView e DrawerLayout",
+            javaActivity = ActivityNavDrawerSimples::class
+        ),
         ClassExercises(
             title = "AULA 27 - RecyclerView",
             javaActivity = ActivityClass27StudentsList::class,
@@ -98,8 +102,10 @@ class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) 
                     it.context.startActivity(Intent(it.context, javaActivity.java))
                 }
 
-                btKotlin.setOnClickListener {
-                    it.context.startActivity(Intent(it.context, kotlinActivity.java))
+                kotlinActivity?.let {
+                    btKotlin.setOnClickListener {
+                        it.context.startActivity(Intent(it.context, kotlinActivity.java))
+                    }
                 }
             }
         }

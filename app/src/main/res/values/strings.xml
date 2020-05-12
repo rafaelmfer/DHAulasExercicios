@@ -37,6 +37,12 @@
     <string name="car_one">Carro 1</string>
     <string name="car_two">Carro 2</string>
 
+    <!--    CLASS 26-->
+    <string name="menu_camera">Camera</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nav_drawer_simple_title">Navigation Drawer Simples</string>
+
     <!--    CLASS 27-->
     <string name="students">Alunos</string>
     <string name="ra_number">RA: %1$s</string>
