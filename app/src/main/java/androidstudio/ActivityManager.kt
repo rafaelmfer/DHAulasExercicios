@@ -63,7 +63,8 @@ class ActivityManager : AppCompatActivity() {
         ),
         ClassExercises(
             title = "AULA 26 - NavigationView e DrawerLayout",
-            javaActivity = ActivityNavDrawerSimples::class
+            javaActivity = ActivityNavDrawerSimples::class,
+            kotlinActivity = ActivityNavDrawerSimples::class
         ),
         ClassExercises(
             title = "AULA 27 - RecyclerView",
@@ -102,9 +103,9 @@ class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) 
                     it.context.startActivity(Intent(it.context, javaActivity.java))
                 }
 
-                kotlinActivity?.let {
+                kotlinActivity?.let {clazz ->
                     btKotlin.setOnClickListener {
-                        it.context.startActivity(Intent(it.context, kotlinActivity.java))
+                        it.context.startActivity(Intent(it.context, clazz.java))
                     }
                 }
             }
