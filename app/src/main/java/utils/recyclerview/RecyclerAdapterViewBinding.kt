@@ -1,19 +1,21 @@
 package utils.recyclerview
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 
-inline fun <reified T : RecyclerViewBuilderViewBinding<*, *>>
-        RecyclerView.setRecyclerAdapterViewBinding(list: Collection<*>) {
-    adapter = recyclerAdapterViewBinding<T>(list)
-}
+inline fun <reified BuilderViewBinding : RecyclerViewBuilderViewBinding<*, *>>
+        RecyclerView.setupViewBinding(list: Collection<*>) =
+    recyclerAdapterViewBinding<BuilderViewBinding>(list).apply { adapter = this }
 
 inline fun <reified BuilderViewBinding : RecyclerViewBuilderViewBinding<*, *>> recyclerAdapterViewBinding(collection: Collection<*>) =
-    object : RecyclerView.Adapter<RecyclerViewHolderViewBinding>() {
+    object : RecyclerAdapter<RecyclerViewHolderViewBinding>(collection) {
 
         override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int) =
             RecyclerViewHolderViewBinding(
@@ -32,8 +34,10 @@ open class RecyclerViewHolderViewBinding(val builder: RecyclerViewBuilderViewBin
 abstract class RecyclerViewBuilderViewBinding<Data, Binding : ViewBinding> {
 
     abstract val bindClass: Class<Binding>
-    private lateinit var binding: Binding
+
+    lateinit var binding: Binding
     lateinit var collection: Collection<Data>
+    lateinit var context: Context
 
     private lateinit var viewGroup: ViewGroup
 
@@ -41,11 +45,13 @@ abstract class RecyclerViewBuilderViewBinding<Data, Binding : ViewBinding> {
     fun init(viewGroup: ViewGroup, collection: Collection<*>): RecyclerViewBuilderViewBinding<Data, Binding> {
         this.viewGroup = viewGroup
         this.collection = collection as Collection<Data>
+        context = viewGroup.context
         return this
     }
 
     fun build(): View {
         binding = inflate()
+        binding.root.layoutParams = RecyclerView.LayoutParams(MATCH_PARENT, WRAP_CONTENT)
         return binding.root
     }
 

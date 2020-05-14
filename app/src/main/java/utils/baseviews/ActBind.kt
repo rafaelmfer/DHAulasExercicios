@@ -1,5 +1,6 @@
 package utils.baseviews
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.viewbinding.ViewBinding
@@ -7,6 +8,8 @@ import androidx.viewbinding.ViewBinding
 abstract class ActBind<T : ViewBinding>(private val clazz: Class<T>) : ActBase() {
 
     lateinit var binding: T
+
+    val context: Context by lazy { binding.root.context }
 
     @Suppress("UNCHECKED_CAST")
     fun inflate() =

@@ -5,13 +5,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-inline fun <reified T : RecyclerViewBuilder<*>>
-        RecyclerView.setRecyclerAdapter(list: Collection<*>) {
-    adapter = recyclerAdapter<T>(list)
+val RecyclerView.recyclerAdapter get() = adapter as RecyclerAdapter?
+fun RecyclerView.update() = recyclerAdapter?.notifyDataSetChanged()
+
+abstract class RecyclerAdapter<Type : RecyclerView.ViewHolder>(collection: Collection<*>) : RecyclerView.Adapter<Type>() {
+
+    var collection: Collection<*> = collection
+        set(value) {
+            field = value
+            notifyDataSetChanged()
+        }
 }
 
+inline fun <reified Builder : RecyclerViewBuilder<*>> RecyclerView.setup(list: Collection<*>) =
+    recyclerAdapter<Builder>(list).apply { adapter = this }
+
 inline fun <reified Builder : RecyclerViewBuilder<*>> recyclerAdapter(collection: Collection<*>) =
-    object : RecyclerView.Adapter<RecyclerViewHolder>() {
+    object : RecyclerAdapter<RecyclerViewHolder>(collection) {
 
         override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int) =
             RecyclerViewHolder(Builder::class.java.newInstance().init(viewGroup, collection))

@@ -5,14 +5,23 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
 
-fun ViewPager.setupPagerAdapter(frags: Any, titles: Any) {
-    adapter = CustomPagerAdapter(
-        frags, titles, (context as AppCompatActivity).supportFragmentManager
-    )
+fun ViewPager.setupPagerAdapter(
+    frags: Any,
+    titles: Any? = null,
+    tabLayout: TabLayout? = null,
+    fragManager: FragmentManager = (context as AppCompatActivity).supportFragmentManager
+) {
+    tabLayout?.setupWithViewPager(this)
+    adapter = CustomPagerAdapter(frags, titles, fragManager)
 }
 
-class CustomPagerAdapter(private val frags: Any, private val titles: Any, fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
+class CustomPagerAdapter(
+    private val frags: Any,
+    private val titles: Any?,
+    fragmentManager: FragmentManager
+) : FragmentPagerAdapter(fragmentManager) {
 
     override fun getItem(position: Int) =
         when (frags) {
@@ -37,4 +46,3 @@ class CustomPagerAdapter(private val frags: Any, private val titles: Any, fragme
         }
     }
 }
-

@@ -37,7 +37,7 @@ public class ActivityViewPagerTabLayout extends AppCompatActivity {
         viewpagerTabLayoutBinding.tabLayout.setupWithViewPager(viewpagerTabLayoutBinding.viewPager);
 
         //SetAdapter usando uma Extension Function
-//        CustomPagerAdapterKt.setupPagerAdapter(viewpagerTabLayoutBinding.viewPager, fragmentList, names);
+//        CustomPagerAdapterKt.setupPagerAdapter(viewpagerTabLayoutBinding.viewPager, fragmentList, names, viewpagerTabLayoutBinding.tabLayout, getSupportFragmentManager());
 
         // Usado para não destruir o fragment, e evitar o erro de adicionar itens novamente no adapter da recycler no primeiro fragment
         viewpagerTabLayoutBinding.viewPager.setOffscreenPageLimit(fragmentList.size());
