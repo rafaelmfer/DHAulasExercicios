@@ -20,6 +20,7 @@ import androidstudio.class24.kotlin.ActClass24
 import androidstudio.class26.java.ActivityNavDrawerSimples
 import androidstudio.class27.java.ui.ActivityClass27StudentsList
 import androidstudio.class27.kotlin.ui.ActClass27StudentsList
+import androidstudio.class29.java.ActivityViewPagerTabLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -70,6 +71,10 @@ class ActivityManager : AppCompatActivity() {
             title = "AULA 27 - RecyclerView",
             javaActivity = ActivityClass27StudentsList::class,
             kotlinActivity = ActClass27StudentsList::class
+        ),
+        ClassExercises(
+            title = "AULA 29 - ViewPager e TabLayout",
+            javaActivity = ActivityViewPagerTabLayout::class
         )
     )
 

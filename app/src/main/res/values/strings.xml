@@ -47,4 +47,9 @@
     <string name="students">Alunos</string>
     <string name="ra_number">RA: %1$s</string>
 
+    <!--    CLASS 29-->
+    <string name="musics">Musicas</string>
+    <string name="bands_artist_name">Nome da Banda/Artista</string>
+    <string name="year_album_release">Ano - %1$s</string>
+
 </resources>

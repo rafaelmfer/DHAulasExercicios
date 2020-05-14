@@ -42,6 +42,7 @@
     <dimen name="height_72">72dp</dimen>
     <dimen name="height_150">150dp</dimen>
     <dimen name="height_200">200dp</dimen>
+    <dimen name="height_300">300dp</dimen>
 
     <!--    ELEVATION-->
     <dimen name="elevate_4">4dp</dimen>
