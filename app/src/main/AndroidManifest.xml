@@ -39,8 +39,8 @@
         <activity android:name="androidstudio.class23.kotlin.Class23Act" />
         <activity android:name="androidstudio.class24.java.Class24Activity" />
         <activity android:name="androidstudio.class24.java.Class24Activity2" />
-        <activity android:name="androidstudio.class24.kotlin.Class24Act" />
-        <activity android:name="androidstudio.class24.kotlin.Class24Act2" />
+        <activity android:name="androidstudio.class24.kotlin.ActClass24" />
+        <activity android:name="androidstudio.class24.kotlin.Act2Class24" />
         <activity android:name="androidstudio.class26.java.ActivityNavDrawerSimples" />
         <activity android:name="androidstudio.class26.kotlin.ActNavDrawerSimples" />
         <activity android:name="androidstudio.class27.java.ui.ActivityClass27StudentsList" />

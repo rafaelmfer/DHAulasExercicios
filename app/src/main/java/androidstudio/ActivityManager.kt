@@ -16,7 +16,7 @@ import androidstudio.class21.kotlin.TelephoneBookAct
 import androidstudio.class23.java.Class23Activity
 import androidstudio.class23.kotlin.Class23Act
 import androidstudio.class24.java.Class24Activity
-import androidstudio.class24.kotlin.Class24Act
+import androidstudio.class24.kotlin.ActClass24
 import androidstudio.class26.java.ActivityNavDrawerSimples
 import androidstudio.class27.java.ui.ActivityClass27StudentsList
 import androidstudio.class27.kotlin.ui.ActClass27StudentsList
@@ -59,7 +59,7 @@ class ActivityManager : AppCompatActivity() {
         ClassExercises(
             title = "AULA 24 - Comunicação Entre Fragments",
             javaActivity = Class24Activity::class,
-            kotlinActivity = Class24Act::class
+            kotlinActivity = ActClass24::class
         ),
         ClassExercises(
             title = "AULA 26 - NavigationView e DrawerLayout",
@@ -95,7 +95,6 @@ class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) 
 
     override fun onBindViewHolder(holder: ActsListViewHolder, position: Int) {
         classExercises[position].run {
-
             holder.apply {
                 tvTitleClassName.text = title
 
@@ -103,7 +102,7 @@ class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) 
                     it.context.startActivity(Intent(it.context, javaActivity.java))
                 }
 
-                kotlinActivity?.let {clazz ->
+                kotlinActivity?.let { clazz ->
                     btKotlin.setOnClickListener {
                         it.context.startActivity(Intent(it.context, clazz.java))
                     }

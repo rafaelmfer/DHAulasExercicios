@@ -10,10 +10,11 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputLayout
 import com.rafaelmfer.codeclasses.R
 import kotlinx.android.synthetic.main.fragment_class24_1.*
+import utils.ActivityContract
 
-class FragmentClass24Input1 : Fragment() {
+class FragClass24Input1 : Fragment() {
 
-    private var activity: InterfaceFragments? = null
+    private var activity: ActivityContract? = null
     
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_class24_1, container, false)
@@ -21,7 +22,7 @@ class FragmentClass24Input1 : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        activity = context as InterfaceFragments
+        activity = context as ActivityContract
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,7 +32,7 @@ class FragmentClass24Input1 : Fragment() {
             if (editTextIsNotEmpty(etClass24UserName, etClass24UserEmail, etClass24UserPassword)) {
                 val bundle = Bundle()
                 bundle.putString(NAME_KEY, etClass24UserName.text.toString())
-                activity?.startFragment(FragmentClass24Output2.newInstance(bundle))
+                activity?.startFragment(FragClass24Output2.newInstance(bundle))
             } else {
                 if (!editTextIsNotEmpty(etClass24UserName)) {
                     tilClass24UserName.error = getString(R.string.error_field_must_be_filled)
