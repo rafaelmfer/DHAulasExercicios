@@ -22,6 +22,7 @@ import androidstudio.class27.java.ui.ActivityClass27StudentsList
 import androidstudio.class27.kotlin.ui.ActClass27StudentsList
 import androidstudio.class29.java.ActivityViewPagerTabLayout
 import androidstudio.class29.kotlin.ActViewPagerTabLayout
+import androidstudio.class38mvvm.kotlin.ActArchitecture
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,11 +34,11 @@ class ActivityManager : AppCompatActivity() {
 
     data class ClassExercises(
         var title: String,
-        var javaActivity: KClass<out AppCompatActivity>,
+        var javaActivity: KClass<out AppCompatActivity>? = null,
         var kotlinActivity: KClass<out AppCompatActivity>? = null
     )
 
-    var classExercises = listOf(
+    private var classExercises = listOf(
         ClassExercises(
             title = "AULA 18 - Layouts",
             javaActivity = ProductWithDiscountActivity::class,
@@ -77,6 +78,10 @@ class ActivityManager : AppCompatActivity() {
             title = "AULA 29 - ViewPager e TabLayout",
             javaActivity = ActivityViewPagerTabLayout::class,
             kotlinActivity = ActViewPagerTabLayout::class
+        ),
+        ClassExercises(
+            title = "AULA 38 - MVVM",
+            kotlinActivity = ActArchitecture::class
         )
     )
 
@@ -92,7 +97,8 @@ class ActivityManager : AppCompatActivity() {
     }
 }
 
-class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) : RecyclerView.Adapter<ActsListAdapter.ActsListViewHolder>() {
+class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) :
+    RecyclerView.Adapter<ActsListAdapter.ActsListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ActsListViewHolder(
         LayoutInflater.from(parent.context).inflate(R.layout.item_acts_list, parent, false)
@@ -105,8 +111,10 @@ class ActsListAdapter(var classExercises: List<ActivityManager.ClassExercises>) 
             holder.apply {
                 tvTitleClassName.text = title
 
-                btJava.setOnClickListener {
-                    it.context.startActivity(Intent(it.context, javaActivity.java))
+                javaActivity?.let { clazz ->
+                    btJava.setOnClickListener {
+                        it.context.startActivity(Intent(it.context, clazz.java))
+                    }
                 }
 
                 kotlinActivity?.let { clazz ->

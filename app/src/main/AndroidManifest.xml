@@ -47,6 +47,7 @@
         <activity android:name="androidstudio.class27.kotlin.ui.ActClass27StudentsList" />
         <activity android:name="androidstudio.class29.java.ActivityViewPagerTabLayout" />
         <activity android:name="androidstudio.class29.kotlin.ActViewPagerTabLayout" />
+        <activity android:name="androidstudio.class38mvvm.kotlin.ActArchitecture" />
     </application>
 
 </manifest>

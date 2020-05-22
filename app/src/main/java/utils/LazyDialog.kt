@@ -3,8 +3,6 @@ package utils
 import android.content.Context
 import android.content.DialogInterface
 import android.util.TypedValue
-import android.widget.Toast
-import android.widget.Toast.makeText
 import androidx.appcompat.app.AlertDialog
 import com.rafaelmfer.codeclasses.R
 
@@ -40,5 +38,3 @@ class LazyDialog(
 private fun Context.resolveAttribute(attr: Int) = TypedValue().apply {
     theme.resolveAttribute(attr, this, true)
 }.resourceId
-
-private fun Context.toast(message: String) = makeText(this, message, Toast.LENGTH_LONG).show()

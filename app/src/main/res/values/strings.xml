@@ -52,4 +52,9 @@
     <string name="bands_artist_name">Nome da Banda/Artista</string>
     <string name="year_album_release">Ano - %1$s</string>
 
+    <!--    CLASS 38-->
+    <string name="even_or_odd">Par ou Impar?</string>
+    <string name="is_even">Este número é PAR</string>
+    <string name="is_odd">Este número é ÍMPAR</string>
+
 </resources>
