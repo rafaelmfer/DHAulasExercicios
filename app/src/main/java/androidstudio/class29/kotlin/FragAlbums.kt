@@ -7,7 +7,10 @@ import utils.adapter.setupPagerAdapter
 import utils.baseviews.FragBind
 import utils.newInstance
 
-class FragAlbums : FragBind<FragClass29AlbumLibraryBinding>(FragClass29AlbumLibraryBinding::class.java) {
+class FragAlbums : FragBind<FragClass29AlbumLibraryBinding>() {
+
+    override val bindClass: Class<FragClass29AlbumLibraryBinding>
+        get() = FragClass29AlbumLibraryBinding::class.java
 
     private val fragmentList: MutableList<Fragment> = mutableListOf()
 

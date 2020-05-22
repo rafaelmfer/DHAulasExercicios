@@ -24,7 +24,12 @@ public class FragmentAlbums extends FragBind<FragClass29AlbumLibraryBinding> {
     private List<Fragment> fragmentList = new ArrayList<>();
 
     public FragmentAlbums() {
-        super(FragClass29AlbumLibraryBinding.class);
+    }
+
+    @NotNull
+    @Override
+    public Class<FragClass29AlbumLibraryBinding> getBindClass() {
+        return FragClass29AlbumLibraryBinding.class;
     }
 
     @Override

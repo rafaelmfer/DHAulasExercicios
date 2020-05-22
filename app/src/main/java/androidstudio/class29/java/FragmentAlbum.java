@@ -19,7 +19,12 @@ public class FragmentAlbum extends FragBind<FragClass29AlbumBinding> {
     private String albumName, albumRelease;
 
     public FragmentAlbum() {
-        super(FragClass29AlbumBinding.class);
+    }
+
+    @NotNull
+    @Override
+    public Class<FragClass29AlbumBinding> getBindClass() {
+        return FragClass29AlbumBinding.class;
     }
 
     @Override

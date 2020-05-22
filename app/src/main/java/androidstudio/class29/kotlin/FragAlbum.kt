@@ -8,7 +8,10 @@ import com.rafaelmfer.codeclasses.R
 import com.rafaelmfer.codeclasses.databinding.FragClass29AlbumBinding
 import utils.baseviews.FragBind
 
-class FragAlbum : FragBind<FragClass29AlbumBinding>(FragClass29AlbumBinding::class.java) {
+class FragAlbum : FragBind<FragClass29AlbumBinding>() {
+
+    override val bindClass: Class<FragClass29AlbumBinding>
+        get() = FragClass29AlbumBinding::class.java
 
     private var albumImage: Int = 0
     private lateinit var albumName: String

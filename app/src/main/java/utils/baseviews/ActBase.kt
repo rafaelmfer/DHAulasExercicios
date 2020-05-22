@@ -3,19 +3,9 @@ package utils.baseviews
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModel
 import utils.debugging.ExceptionHandler
 
 open class ActBase(val layout: Any? = null) : AppCompatActivity() {
-
-    companion object {
-        const val teste = "string"
-
-        @JvmStatic lateinit var currentActivity: AppCompatActivity
-        @JvmStatic var exceptionHandler = ExceptionHandler()
-    }
-
-    open var viewModel: ViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +15,6 @@ open class ActBase(val layout: Any? = null) : AppCompatActivity() {
             is View -> setContentView(layout)
         }
         intent?.extras?.onExtras()
-        viewModel?.onViewModel()
         onView()
     }
 
@@ -36,8 +25,10 @@ open class ActBase(val layout: Any? = null) : AppCompatActivity() {
 
     open fun Bundle.onExtras() {}
 
-    open fun ViewModel.onViewModel() {}
-
     open fun onView() {}
 
+    companion object {
+        @JvmStatic lateinit var currentActivity: AppCompatActivity
+        @JvmStatic var exceptionHandler = ExceptionHandler()
+    }
 }
