@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.my_utils.extensions.newInstance
+import com.my_utils.viewpager.setupPagerAdapter
 import com.rafaelmfer.codeclasses.R
 import com.rafaelmfer.codeclasses.databinding.FragClass29ImageLibraryBinding
-import utils.adapter.setupPagerAdapter
-import utils.newInstance
 
 class FragImageLibrary : Fragment() {
 

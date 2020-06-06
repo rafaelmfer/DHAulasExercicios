@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputLayout
+import com.my_utils.baseviews.ActivityContract
 import com.rafaelmfer.codeclasses.R
 import kotlinx.android.synthetic.main.fragment_class24_1.*
-import utils.ActivityContract
 
 class FragClass24Input1 : Fragment() {
 

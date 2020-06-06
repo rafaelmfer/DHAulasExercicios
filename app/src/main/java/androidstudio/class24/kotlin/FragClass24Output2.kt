@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidstudio.class24.kotlin.FragClass24Input1.Companion.NAME_KEY
 import androidx.fragment.app.Fragment
+import com.my_utils.baseviews.ActivityContract
 import com.rafaelmfer.codeclasses.R
 import kotlinx.android.synthetic.main.fragment_class24_2.*
-import utils.ActivityContract
 
 class FragClass24Output2 : Fragment() {
 

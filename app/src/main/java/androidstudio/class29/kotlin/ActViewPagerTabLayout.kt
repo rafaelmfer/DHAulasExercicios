@@ -3,8 +3,8 @@ package androidstudio.class29.kotlin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.my_utils.viewpager.setupPagerAdapter
 import com.rafaelmfer.codeclasses.databinding.ActivityViewpagerTablayoutBinding
-import utils.adapter.setupPagerAdapter
 
 class ActViewPagerTabLayout : AppCompatActivity() {
 

@@ -5,6 +5,7 @@ import android.view.View;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.my_utils.baseviews.FragBase;
 import com.rafaelmfer.codeclasses.R;
 import com.rafaelmfer.codeclasses.databinding.FragClass29MusicsBinding;
 
@@ -14,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidstudio.class29.java.pojo.Music;
-import utils.baseviews.FragBase;
 
 public class FragmentMusics extends FragBase {
 

@@ -5,8 +5,8 @@ import androidstudio.class29.java.pojo.Music
 import androidstudio.class29.kotlin.recycler.AdapterMusics
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.my_utils.baseviews.FragBase
 import com.rafaelmfer.codeclasses.R
-import utils.baseviews.FragBase
 
 class FragMusics : FragBase(R.layout.frag_class29_musics) {
 

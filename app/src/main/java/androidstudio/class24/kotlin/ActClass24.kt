@@ -3,10 +3,13 @@ package androidstudio.class24.kotlin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.my_utils.baseviews.ActivityContract
 import com.rafaelmfer.codeclasses.R
-import utils.ActivityContract
 
 class ActClass24 : AppCompatActivity(), ActivityContract {
+
+    override val container: Int
+        get() = TODO("Não usado quando foi criado essa classe")
 
     private val fragManager = supportFragmentManager
 

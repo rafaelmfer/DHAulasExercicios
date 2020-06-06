@@ -1,11 +1,11 @@
 package androidstudio.class29.kotlin
 
 import androidx.fragment.app.Fragment
+import com.my_utils.baseviews.FragBind
+import com.my_utils.extensions.newInstance
+import com.my_utils.viewpager.setupPagerAdapter
 import com.rafaelmfer.codeclasses.R
 import com.rafaelmfer.codeclasses.databinding.FragClass29AlbumLibraryBinding
-import utils.adapter.setupPagerAdapter
-import utils.baseviews.FragBind
-import utils.newInstance
 
 class FragAlbums : FragBind<FragClass29AlbumLibraryBinding>() {
 

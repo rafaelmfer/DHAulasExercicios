@@ -1,0 +1,6 @@
+<resources>
+    <!--    CUSTOM VIEWS-->
+    <string name="acs_back">voltar</string>
+    <string name="acs_close">fechar</string>
+    <string name="acs_toolbar_title">%1$s</string>
+</resources>

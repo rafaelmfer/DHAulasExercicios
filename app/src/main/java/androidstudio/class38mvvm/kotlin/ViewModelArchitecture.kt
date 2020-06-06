@@ -3,8 +3,8 @@ package androidstudio.class38mvvm.kotlin
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import utils.isDigit
-import utils.isOdd
+import com.my_utils.extensions.isDigit
+import com.my_utils.extensions.isOdd
 
 class ViewModelArchitecture : ViewModel() {
 

@@ -2,12 +2,11 @@ package androidstudio.class29.java;
 
 import android.os.Bundle;
 
+import com.my_utils.baseviews.FragBind;
 import com.rafaelmfer.codeclasses.R;
 import com.rafaelmfer.codeclasses.databinding.FragClass29AlbumBinding;
 
 import org.jetbrains.annotations.NotNull;
-
-import utils.baseviews.FragBind;
 
 import static androidstudio.class29.java.FragmentAlbums.ALBUM_IMAGE;
 import static androidstudio.class29.java.FragmentAlbums.ALBUM_NAME;

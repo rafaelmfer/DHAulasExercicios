@@ -9,13 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.my_utils.extensions.ExtFragKt;
 import com.rafaelmfer.codeclasses.R;
 import com.rafaelmfer.codeclasses.databinding.FragClass29ImageLibraryBinding;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import utils.ExtFragKt;
 
 public class FragmentImageLibrary extends Fragment {
 

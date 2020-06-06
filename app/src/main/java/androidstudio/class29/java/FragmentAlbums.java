@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import com.my_utils.baseviews.FragBind;
+import com.my_utils.extensions.ExtFragKt;
 import com.rafaelmfer.codeclasses.R;
 import com.rafaelmfer.codeclasses.databinding.FragClass29AlbumLibraryBinding;
 
@@ -11,9 +13,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import utils.ExtFragKt;
-import utils.baseviews.FragBind;
 
 public class FragmentAlbums extends FragBind<FragClass29AlbumLibraryBinding> {
 

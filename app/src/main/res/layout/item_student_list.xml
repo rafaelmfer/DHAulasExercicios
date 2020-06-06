@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:background="@color/white">
 
-            <utils.CircleImageView
+            <com.my_utils.CircleImageView
                 android:id="@+id/civStudentProfilePhoto"
                 android:layout_width="@dimen/width_60"
                 android:layout_height="@dimen/height_60"

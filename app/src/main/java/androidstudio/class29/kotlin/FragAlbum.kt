@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidstudio.class29.kotlin.FragAlbums.Companion.ALBUM_IMAGE
 import androidstudio.class29.kotlin.FragAlbums.Companion.ALBUM_NAME
 import androidstudio.class29.kotlin.FragAlbums.Companion.ALBUM_RELEASE
+import com.my_utils.baseviews.FragBind
 import com.rafaelmfer.codeclasses.R
 import com.rafaelmfer.codeclasses.databinding.FragClass29AlbumBinding
-import utils.baseviews.FragBind
 
 class FragAlbum : FragBind<FragClass29AlbumBinding>() {
 

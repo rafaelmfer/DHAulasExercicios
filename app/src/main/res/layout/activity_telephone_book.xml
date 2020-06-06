@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="androidstudio.class21.java.TelephoneBookActivity">
 
-    <utils.CircleImageView
+    <com.my_utils.CircleImageView
         android:id="@+id/ivTelephoneUser"
         android:layout_width="@dimen/width_200"
         android:layout_height="@dimen/height_200"
