@@ -70,6 +70,10 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
         btCloseButton.setOnClickListener { action() }
     }
 
+    fun setButtonLeftAction(action: () -> Unit) {
+        btBackButton.setOnClickListener { action() }
+    }
+
     fun updateTitleToolbar() {
         tvToolbarTitle.run {
             text = titleToolbar

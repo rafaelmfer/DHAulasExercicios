@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AndroidChallenge2</string>
+    <string name="welcome_to_the_marvel_hqs">Welcome to the Marvel HQ\'s</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="publication_date">Published: %1$s</string>
+    <string name="comic_price">Price: $ %1$s</string>
+    <string name="pages_quantity">Pages: %1$s</string>
+    <string name="no_description_available">No description available</string>
+    <string name="no_information_available">No information available</string>
+    <string name="pages_quantity_not_available">Pages: quantity not available</string>
+    <string name="printed_comic_price">printPrice</string>
+    <string name="publication_date_key_api">onsaleDate</string>
+
+    <!--    ERRORS-->
+    <string name="error_field_must_be_filled">Campo precisa ser preenchido</string>
+</resources>

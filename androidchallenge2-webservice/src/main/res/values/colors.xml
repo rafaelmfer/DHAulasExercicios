@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="marvel_comics_logo_red">#ED1D24</color>
+    <color name="spider_man_red">#B11313</color>
+    <color name="background_activities">#00162C</color>
+</resources>

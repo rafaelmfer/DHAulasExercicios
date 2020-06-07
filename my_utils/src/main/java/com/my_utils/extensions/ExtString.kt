@@ -2,6 +2,7 @@ package com.my_utils.extensions
 
 import android.annotation.SuppressLint
 import android.widget.EditText
+import com.google.android.material.textfield.TextInputLayout
 import java.util.Locale
 
 const val LINE_BREAK = "\n"
@@ -62,3 +63,18 @@ val Int.isOdd get() = this % 2 != 0
 val EditText.string get() = text.toString()
 
 val EditText.int get() = string.toInt()
+
+fun editTextIsNotEmpty(vararg editTexts: EditText): Boolean {
+    for (et in editTexts) {
+        if (et.text.toString().isEmpty()) {
+            return false
+        }
+    }
+    return true
+}
+
+fun removeErrorOnTextInputLayout(vararg textInputLayouts: TextInputLayout) {
+    for (til in textInputLayouts) {
+        til.isErrorEnabled = false
+    }
+}
