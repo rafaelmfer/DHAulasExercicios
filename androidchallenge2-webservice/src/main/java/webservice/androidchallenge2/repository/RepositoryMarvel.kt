@@ -16,8 +16,8 @@ class RepositoryMarvel {
     private val ts = System.currentTimeMillis().toString()
     private val hash = getMd5(ts)
 
-    suspend fun getComics(apiKey: String = PUBLIC_KEY): ComicsResponse {
-        return serviceMarvelApi.getComics(ts, hash, apiKey)
+    suspend fun getComics(apiKey: String = PUBLIC_KEY, offset: Int): ComicsResponse {
+        return serviceMarvelApi.getComics(ts, hash, apiKey, offset)
     }
 
     private fun getMd5(ts: String): String {
@@ -37,8 +37,8 @@ class RepositoryMarvel {
     }
 
     companion object {
-        private const val PUBLIC_KEY = "dd82cc3630e1624e9695dbd63c236c72"
-        private const val PRIVATE_KEY = "3065762afd1a9acaeb446aa6195e5a92f2a58c69"
+        private const val PUBLIC_KEY = "6eb7e8896ec5850c52515a8a23ee97f0"
+        private const val PRIVATE_KEY = "0dd0c16fedb8a02985977eafca66b49f5e6a526f"
 
         private const val MD5 = "MD5"
         private const val SIGNUM_1 = 1

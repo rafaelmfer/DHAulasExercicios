@@ -13,7 +13,7 @@ class ItemViewHQ : ItemViewBuilderViewBinding<Results, ItemHqBinding>() {
     override fun ItemHqBinding.onBind(position: Int) {
         (collection as Set<Results>).elementAt(position).run {
             hqNameOnList.text = title
-            Picasso.get().load("${thumbnail.path}/portrait_fantastic.${thumbnail.extension}").into(hqImageOnList)
+            Picasso.get().load("${thumbnail.path}.${thumbnail.extension}").into(hqImageOnList)
             placeholderHq.setOnClickListener {
                 context.startActivity(Intent(context, ActHQDetail::class.java).apply {
                 putExtra(COMIC_KEY,this@run)

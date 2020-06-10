@@ -13,7 +13,7 @@ class ViewModelComicList : ViewModel() {
     var comicsResponse = MutableLiveData<ComicsResponse>()
     private val repositoryMarvel = RepositoryMarvel()
 
-    fun getComics() = CoroutineScope(Dispatchers.IO).launch {
-        comicsResponse.postValue(repositoryMarvel.getComics())
+    fun getComics(offset: Int) = CoroutineScope(Dispatchers.IO).launch {
+        comicsResponse.postValue(repositoryMarvel.getComics(offset = offset))
     }
 }

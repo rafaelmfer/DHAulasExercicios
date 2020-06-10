@@ -11,6 +11,7 @@ interface ServiceMarvelApi {
         @Query("ts") ts: String,
         @Query("hash") hash: String,
         @Query("apikey") apiKey: String,
+        @Query("offset") offset: Int,
         @Query("limit") limit: Int = 100
     ): ComicsResponse
 }
