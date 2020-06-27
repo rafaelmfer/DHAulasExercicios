@@ -23,6 +23,7 @@ import androidstudio.class27.kotlin.ui.ActClass27StudentsList
 import androidstudio.class29.java.ActivityViewPagerTabLayout
 import androidstudio.class29.kotlin.ActViewPagerTabLayout
 import androidstudio.class38mvvm.kotlin.ActArchitecture
+import androidstudio.googlemaps.kotlin.ActGoogleMaps
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -82,6 +83,10 @@ class ActivityManager : AppCompatActivity() {
         ClassExercises(
             title = "AULA 38 - MVVM",
             kotlinActivity = ActArchitecture::class
+        ),
+        ClassExercises(
+            title = "Google Maps",
+            kotlinActivity = ActGoogleMaps::class
         )
     )
 

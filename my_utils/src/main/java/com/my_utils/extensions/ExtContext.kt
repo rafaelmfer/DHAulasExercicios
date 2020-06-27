@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
 import android.content.res.Resources
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import kotlin.reflect.KClass
@@ -37,3 +38,10 @@ private fun Context.getResourceOrToString(text: Int) = try {
 } catch (ex: Resources.NotFoundException) {
     text.toString()
 }
+
+fun Context.openGoogleMaps(location: String) = startActivity(
+    Intent(
+        Intent.ACTION_VIEW,
+        Uri.parse("geo:0,0?q=$location")
+    ).setPackage("com.google.android.apps.maps")
+)

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rafaelmfer.codeclasses">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -10,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name="androidstudio.ActivityManager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +50,14 @@
         <activity android:name="androidstudio.class29.java.ActivityViewPagerTabLayout" />
         <activity android:name="androidstudio.class29.kotlin.ActViewPagerTabLayout" />
         <activity android:name="androidstudio.class38mvvm.kotlin.ActArchitecture" />
+
+        <activity
+            android:name="androidstudio.googlemaps.kotlin.ActGoogleMaps"
+            android:label="@string/title_activity_maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

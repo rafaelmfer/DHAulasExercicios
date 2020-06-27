@@ -56,5 +56,7 @@
     <string name="even_or_odd">Par ou Impar?</string>
     <string name="is_even">Este número é PAR</string>
     <string name="is_odd">Este número é ÍMPAR</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_address">Buscar Endereço</string>
 
 </resources>
