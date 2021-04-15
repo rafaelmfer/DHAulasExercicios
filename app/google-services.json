@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70303722334",
+    "firebase_url": "https://dhexercicios-code.firebaseio.com",
+    "project_id": "dhexercicios-code",
+    "storage_bucket": "dhexercicios-code.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70303722334:android:7506555ce1d780d9c6bdcf",
+        "android_client_info": {
+          "package_name": "com.rafaelmfer.codeclasses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70303722334-o84grgsuiaknr828ov778c0f0uscbkld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApUC2VmfnQkbtvs5q0G6MQeoKWjgwlmBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70303722334-o84grgsuiaknr828ov778c0f0uscbkld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
